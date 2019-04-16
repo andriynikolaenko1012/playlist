@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PlaylistFeedReader</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="youtube_api_key">AIzaSyAkqyYTwTfjK9woaR8i0wE4wF6D-EVcC04</string>
+    <string name="api_base_url">https://www.googleapis.com/</string>
+
+    <string name="playlist_id_1">PLFgquLnL59alCl_2TQvOiD5Vgm1hCaGSI</string>
+
+    <string name="playlist_id_2">PLFgquLnL59akA2PflFpeQG9L01VFg90wS</string>
+
+    <string name="playlist_id_3">PLUg_BxrbJNY5gHrKsCsyon6vgJhxs72AH</string>
+</resources>
