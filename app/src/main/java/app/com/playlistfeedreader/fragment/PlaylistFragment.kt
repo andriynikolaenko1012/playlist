@@ -131,7 +131,7 @@ class PlaylistFragment : BaseFragment() {
         swipyrefreshlayout.visibility = View.GONE
         swipyrefreshlayoutDB.visibility = View.VISIBLE
 
-        viewModel!!.getListContacts().observe(this, Observer { videos ->
+        viewModel!!.getListVideos().observe(this, Observer { videos ->
 
             val lst = arrayListOf<Video>()
 

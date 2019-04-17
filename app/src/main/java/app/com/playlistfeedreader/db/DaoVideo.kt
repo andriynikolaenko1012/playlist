@@ -9,11 +9,11 @@ import android.arch.persistence.room.*
 @Dao
 interface DaoVideo {
     @Query("select * from videos")
-    fun getAllContacts(): LiveData<List<Video>>
+    fun getAllVideos(): LiveData<List<Video>>
 
     @Query("delete from videos")
-    fun deleteAllContacts()
+    fun deleteAllVideos()
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertContact(video: Video)
+    fun insertVideo(video: Video)
 }

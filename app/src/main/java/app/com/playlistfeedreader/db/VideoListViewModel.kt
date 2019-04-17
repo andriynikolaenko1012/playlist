@@ -15,14 +15,14 @@ class VideoListViewModel(application: Application) : AndroidViewModel(applicatio
 
     init {
         appDb = VideoDb.getDataBase(this.getApplication())
-        listVideo = appDb.daoContact().getAllContacts()
+        listVideo = appDb.daoVideo().getAllVideos()
     }
 
-    fun getListContacts(): LiveData<List<Video>> {
+    fun getListVideos(): LiveData<List<Video>> {
         return listVideo
     }
 
-    fun addContact(video: Video) {
+    fun addVideo(video: Video) {
         addAsynTask(appDb).execute(video)
     }
 
@@ -30,7 +30,7 @@ class VideoListViewModel(application: Application) : AndroidViewModel(applicatio
     class addAsynTask(db: VideoDb) : AsyncTask<Video, Void, Void>() {
         private var contactDb = db
         override fun doInBackground(vararg params: Video): Void? {
-            contactDb.daoContact().insertContact(params[0])
+            contactDb.daoVideo().insertVideo(params[0])
             return null
         }
 

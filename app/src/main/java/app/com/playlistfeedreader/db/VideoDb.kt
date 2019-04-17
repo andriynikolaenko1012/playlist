@@ -8,7 +8,7 @@ import android.content.Context
 /**
  * Created by ThinkSoft on 19/12/2017.
  */
-@Database(entities = [(Video::class)], version = 2, exportSchema = false)
+@Database(entities = [(Video::class)], version = 1, exportSchema = false)
 abstract class VideoDb : RoomDatabase() {
     companion object {
         private var INSTANCE: VideoDb? = null
@@ -21,5 +21,5 @@ abstract class VideoDb : RoomDatabase() {
         }
     }
 
-    abstract fun daoContact(): DaoVideo
+    abstract fun daoVideo(): DaoVideo
 }

@@ -5,8 +5,6 @@ import java.io.Serializable
 
 class SnippetModel : Serializable {
 
-    @SerializedName("publishedAt")
-    var publishedAt: String? = null
     @SerializedName("channelId")
     var channelId: String? = null
     @SerializedName("title")
@@ -15,10 +13,6 @@ class SnippetModel : Serializable {
     var description: String? = null
     @SerializedName("thumbnails")
     var thumbnails: ThumbnailModel? = null
-    @SerializedName("channelTitle")
-    var channelTitle: String? = null
-    @SerializedName("playlistId")
-    var playlistId: String? = null
     @SerializedName("position")
     var position: Int? = null
     @SerializedName("resourceId")

@@ -9,16 +9,15 @@ import android.arch.persistence.room.PrimaryKey
  */
 @Entity(tableName = "videos")
 data class Video(
-        @PrimaryKey(autoGenerate = true)
-        @ColumnInfo(name = "id") var id: Int = 0,
+        @PrimaryKey(autoGenerate = true) var id: Int,
 
-        @ColumnInfo(name = "title") var title: String = "",
+        @ColumnInfo(name = "title") var title: String,
 
-        @ColumnInfo(name = "description") var description: String = "",
+        @ColumnInfo(name = "description") var description: String,
 
-        @ColumnInfo(name = "pltName") var pltName: String = "",
+        @ColumnInfo(name = "pltName") var pltName: String,
 
-        @ColumnInfo(name = "videoId") var videoId: String = "",
+        @ColumnInfo(name = "videoId") var videoId: String,
 
-        @ColumnInfo(name = "image") var image: String = ""
+        @ColumnInfo(name = "image") var image: String
 )

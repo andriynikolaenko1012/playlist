@@ -29,7 +29,7 @@ class PlayerActivity : AppCompatActivity() {
         setContentView(R.layout.player_activity)
 
         var db: VideoDb = VideoDb.getDataBase(this)
-        daoVideo = db.daoContact()
+        daoVideo = db.daoVideo()
         viewModel = ViewModelProviders.of(this).get(VideoListViewModel::class.java)
 
 
@@ -96,7 +96,7 @@ class PlayerActivity : AppCompatActivity() {
         val description = model?.snippet?.description
 
         val contact = Video(0, title!!, description!!, pltName!!, videoId!!, image!!)
-        viewModel!!.addContact(contact)
+        viewModel!!.addVideo(contact)
     }
 
     override fun onBackPressed() {
